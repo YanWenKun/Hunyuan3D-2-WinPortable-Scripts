@@ -27,8 +27,7 @@ set HF_ENDPOINT=https://hf-mirror.com
 @REM ===========================================================================
 
 cd Hunyuan3D-2
-..\python_standalone\python.exe -s gradio_app.py ^
---model_path tencent/Hunyuan3D-2mv --subfolder hunyuan3d-dit-v2-mv-turbo --texgen_model_path tencent/Hunyuan3D-2 --low_vram_mode --enable_flashvdm
+..\python_standalone\python.exe -s gradio_app.py --mv --turbo
 
 cd ..
 
