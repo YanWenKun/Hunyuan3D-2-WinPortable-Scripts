@@ -62,11 +62,11 @@ echo Downloading Hunyuan3D-2 models from HuggingFace...
 .\python_standalone\Scripts\huggingface-cli.exe download ^
 "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**" --exclude "hunyuan3d-paint-v2-0-turbo/unet/diffusion_pytorch_model.bin"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
-"tencent/Hunyuan3D-2" --include "hunyuan3d-dit-v2-0-turbo/*" --exclude "*.ckpt"
+@REM .\python_standalone\Scripts\huggingface-cli.exe download ^
+@REM "tencent/Hunyuan3D-2" --include "hunyuan3d-dit-v2-0-turbo/*" --exclude "*.ckpt"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
-"tencent/Hunyuan3D-2" --include "hunyuan3d-vae-v2-0-turbo/*" --exclude "*.ckpt"
+@REM .\python_standalone\Scripts\huggingface-cli.exe download ^
+@REM "tencent/Hunyuan3D-2" --include "hunyuan3d-vae-v2-0-turbo/*" --exclude "*.ckpt"
 
 
 @REM Download models for Text to 3D

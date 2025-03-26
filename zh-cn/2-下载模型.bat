@@ -63,11 +63,11 @@ echo 正在下载 Hunyuan3D-2 模型...
 .\python_standalone\Scripts\huggingface-cli.exe download ^
 "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**" --exclude "hunyuan3d-paint-v2-0-turbo/unet/diffusion_pytorch_model.bin"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
-"tencent/Hunyuan3D-2" --include "hunyuan3d-dit-v2-0-turbo/*" --exclude "*.ckpt"
+@REM .\python_standalone\Scripts\huggingface-cli.exe download ^
+@REM "tencent/Hunyuan3D-2" --include "hunyuan3d-dit-v2-0-turbo/*" --exclude "*.ckpt"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
-"tencent/Hunyuan3D-2" --include "hunyuan3d-vae-v2-0-turbo/*" --exclude "*.ckpt"
+@REM .\python_standalone\Scripts\huggingface-cli.exe download ^
+@REM "tencent/Hunyuan3D-2" --include "hunyuan3d-vae-v2-0-turbo/*" --exclude "*.ckpt"
 
 
 @REM 下载 文生3D 所需模型
