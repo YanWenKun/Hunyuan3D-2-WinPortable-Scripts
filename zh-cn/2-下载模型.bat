@@ -29,7 +29,7 @@ rem set HF_HUB_ENABLE_HF_TRANSFER=1
 @REM 使用国内镜像站点
 set HF_ENDPOINT=https://hf-mirror.com
 
-@REM 使用清华 PyPI 源
+@REM 使用国内 PyPI 源
 set PIP_INDEX_URL=https://mirrors.cernet.edu.cn/pypi/web/simple
 
 set HF_HUB_CACHE=%~dp0\HuggingFaceHub

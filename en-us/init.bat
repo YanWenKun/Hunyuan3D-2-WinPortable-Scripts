@@ -17,7 +17,9 @@ for %%f in (
     "2-download-models.bat"
     "3-start.bat"
     "4-start-mv.bat"
+    "5-start-api-server.bat"
     "UPDATE.bat"
+    "run-high_vram.bat"
     "run-very_low_vram.bat"
     "run-with-text_to_3d.bat"
 ) do (

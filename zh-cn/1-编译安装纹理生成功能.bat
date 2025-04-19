@@ -2,7 +2,7 @@
 setlocal
 chcp 65001
 
-@REM 使用清华 PyPI 源
+@REM 使用国内 PyPI 源
 set PIP_INDEX_URL=https://mirrors.cernet.edu.cn/pypi/web/simple
 
 set PATH=%PATH%;%~dp0\MinGit\cmd;%~dp0\python_standalone\Scripts
