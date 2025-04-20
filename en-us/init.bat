@@ -20,6 +20,7 @@ for %%f in (
     "5-start-api-server.bat"
     "UPDATE.bat"
     "run-high_vram.bat"
+    "run-mv-high_vram.bat"
     "run-very_low_vram.bat"
     "run-with-text_to_3d.bat"
 ) do (
