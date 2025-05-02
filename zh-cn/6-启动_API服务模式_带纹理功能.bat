@@ -27,7 +27,7 @@ set HF_ENDPOINT=https://hf-mirror.com
 @REM ===========================================================================
 
 cd Hunyuan3D-2
-..\python_standalone\python.exe -s api_server.py --host 0.0.0.0 --port 8081
+..\python_standalone\python.exe -s api_server.py --host 0.0.0.0 --port 8081 --enable_tex
 
 cd ..
 

@@ -18,6 +18,7 @@ for %%f in (
     "3-start.bat"
     "4-start-mv.bat"
     "5-start-api-server.bat"
+    "6-start-api-server-with-texture.bat"
     "UPDATE.bat"
     "run-high_vram.bat"
     "run-mv-high_vram.bat"
