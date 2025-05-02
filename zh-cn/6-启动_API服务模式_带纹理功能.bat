@@ -1,4 +1,4 @@
-@echo on
+@echo off
 setlocal
 chcp 65001
 
@@ -25,6 +25,20 @@ set PIP_INDEX_URL=https://mirrors.cernet.edu.cn/pypi/web/simple
 set HF_ENDPOINT=https://hf-mirror.com
 
 @REM ===========================================================================
+
+@REM 重新安装 hf-hub
+if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
+    echo 正在重新安装 huggingface-hub...
+    .\python_standalone\python.exe -s -m pip uninstall --yes huggingface-hub
+    .\python_standalone\python.exe -s -m pip install "huggingface-hub[hf-transfer]"
+    if %errorlevel% equ 0 (
+        echo.> ".\python_standalone\Scripts\.hf-reinstalled"
+    )
+)
+
+echo 正在下载 API 服务模式（带纹理）所需模型 ...
+.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**"
+.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2mini"
 
 cd Hunyuan3D-2
 ..\python_standalone\python.exe -s api_server.py --host 0.0.0.0 --port 8081 --enable_tex

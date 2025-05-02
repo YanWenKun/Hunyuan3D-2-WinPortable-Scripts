@@ -1,4 +1,4 @@
-@echo on
+@echo off
 setlocal
 
 @REM To set proxy, edit and uncomment the two lines below (remove 'rem ' in the beginning of line).
@@ -18,6 +18,20 @@ set PYTHONPYCACHEPREFIX=%~dp0\pycache
 set HF_HUB_CACHE=%~dp0\HuggingFaceHub
 
 @REM ===========================================================================
+
+@REM Reinstall hf-hub
+if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
+    echo Reinstalling huggingface-hub...
+    .\python_standalone\python.exe -s -m pip uninstall --yes huggingface-hub
+    .\python_standalone\python.exe -s -m pip install "huggingface-hub[hf-transfer]"
+    if %errorlevel% equ 0 (
+        echo.> ".\python_standalone\Scripts\.hf-reinstalled"
+    )
+)
+
+echo Downloading models for API Server with Texture
+.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**"
+.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2mini"
 
 cd Hunyuan3D-2
 ..\python_standalone\python.exe -s api_server.py --host 0.0.0.0 --port 8081 --enable_tex
