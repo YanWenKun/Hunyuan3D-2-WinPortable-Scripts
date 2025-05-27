@@ -17,6 +17,7 @@ set PYTHONPYCACHEPREFIX=%~dp0\pycache
 
 @REM 该环境变量指示 HuggingFace Hub 下载模型到"本目录\HuggingFaceHub"，而不是"用户\.cache"目录。
 set HF_HUB_CACHE=%~dp0\HuggingFaceHub
+set HY3DGEN_MODELS=%~dp0\HuggingFaceHub
 
 @REM 该环境变量配置 PIP 使用国内镜像站点。
 set PIP_INDEX_URL=https://mirrors.cernet.edu.cn/pypi/web/simple
