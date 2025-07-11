@@ -27,6 +27,10 @@ set HF_ENDPOINT=https://hf-mirror.com
 
 @REM ===========================================================================
 
+@REM 安装 sentencepiece
+echo 正在安装 sentencepiece...
+.\python_standalone\python.exe -s -m pip install sentencepiece
+
 @REM 重新安装 hf-hub
 if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
     echo 正在重新安装 huggingface-hub...

@@ -20,6 +20,10 @@ set HY3DGEN_MODELS=%~dp0\HuggingFaceHub
 
 @REM ===========================================================================
 
+@REM Install sentencepiece
+echo Installing sentencepiece...
+.\python_standalone\python.exe -s -m pip install sentencepiece
+
 @REM Reinstall hf-hub
 if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
     echo Reinstalling huggingface-hub...
