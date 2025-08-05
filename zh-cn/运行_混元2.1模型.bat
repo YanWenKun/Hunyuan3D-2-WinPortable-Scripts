@@ -42,7 +42,7 @@ echo 正在下载 混元 2.1 模型 ...
 "tencent/Hunyuan3D-2.1" --include "hunyuan3d-dit-v2-1/**"
 
 cd Hunyuan3D-2
-..\python_standalone\python.exe -s gradio_app.py --model_path "tencent\Hunyuan3D-2.1" --subfolder "hunyuan3d-dit-v2-1"
+..\python_standalone\python.exe -s gradio_app.py --model_path "tencent/Hunyuan3D-2.1" --subfolder "hunyuan3d-dit-v2-1"
 
 cd ..
 
