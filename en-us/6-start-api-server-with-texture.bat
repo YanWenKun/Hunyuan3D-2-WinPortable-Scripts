@@ -31,8 +31,8 @@ if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
 )
 
 echo Downloading models for API Server with Texture
-.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**"
-.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2mini"
+.\python_standalone\Scripts\hf.exe download "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**"
+.\python_standalone\Scripts\hf.exe download "tencent/Hunyuan3D-2mini"
 
 cd Hunyuan3D-2
 ..\python_standalone\python.exe -s api_server.py --host 0.0.0.0 --port 8081 --enable_tex

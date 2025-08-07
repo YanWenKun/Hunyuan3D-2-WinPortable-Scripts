@@ -35,7 +35,7 @@ if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
 )
 
 echo Downloading HunyuanDiT models for Text to 3D
-.\python_standalone\Scripts\huggingface-cli.exe download "Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled"
+.\python_standalone\Scripts\hf.exe download "Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled"
 
 cd Hunyuan3D-2
 ..\python_standalone\python.exe -s gradio_app.py --enable_t23d

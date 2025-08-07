@@ -42,7 +42,7 @@ if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
 )
 
 echo 正在下载 文生3D 所需模型 HunyuanDiT ...
-.\python_standalone\Scripts\huggingface-cli.exe download "Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled"
+.\python_standalone\Scripts\hf.exe download "Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled"
 
 cd Hunyuan3D-2
 ..\python_standalone\python.exe -s gradio_app.py --enable_t23d

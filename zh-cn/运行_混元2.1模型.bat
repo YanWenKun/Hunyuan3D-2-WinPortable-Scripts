@@ -38,7 +38,7 @@ if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
 )
 
 echo 正在下载 混元 2.1 模型 ...
-.\python_standalone\Scripts\huggingface-cli.exe download ^
+.\python_standalone\Scripts\hf.exe download ^
 "tencent/Hunyuan3D-2.1" --include "hunyuan3d-dit-v2-1/**"
 
 cd Hunyuan3D-2

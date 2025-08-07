@@ -31,7 +31,7 @@ if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
 )
 
 echo Downloading Hunyuan3D-2.1 model files...
-.\python_standalone\Scripts\huggingface-cli.exe download ^
+.\python_standalone\Scripts\hf.exe download ^
 "tencent/Hunyuan3D-2.1" --include "hunyuan3d-dit-v2-1/**"
 
 cd Hunyuan3D-2

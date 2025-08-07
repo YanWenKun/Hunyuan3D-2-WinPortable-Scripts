@@ -48,30 +48,30 @@ if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
 
 echo 正在下载 Hunyuan3D-2 模型...
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
+.\python_standalone\Scripts\hf.exe download ^
 "tencent/Hunyuan3D-2mini" --include "hunyuan3d-dit-v2-mini-turbo/*" --exclude "*.ckpt"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
+.\python_standalone\Scripts\hf.exe download ^
 "tencent/Hunyuan3D-2mini" --include "hunyuan3d-vae-v2-mini-turbo/*" --exclude "*.ckpt"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
+.\python_standalone\Scripts\hf.exe download ^
 "tencent/Hunyuan3D-2mv" --include "hunyuan3d-dit-v2-mv-turbo/*" --exclude "*.ckpt"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
+.\python_standalone\Scripts\hf.exe download ^
 "tencent/Hunyuan3D-2" --include "hunyuan3d-delight-v2-0/**"
 
-.\python_standalone\Scripts\huggingface-cli.exe download ^
+.\python_standalone\Scripts\hf.exe download ^
 "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**" --exclude "hunyuan3d-paint-v2-0-turbo/unet/diffusion_pytorch_model.bin"
 
-@REM .\python_standalone\Scripts\huggingface-cli.exe download ^
+@REM .\python_standalone\Scripts\hf.exe download ^
 @REM "tencent/Hunyuan3D-2" --include "hunyuan3d-dit-v2-0-turbo/*" --exclude "*.ckpt"
 
-@REM .\python_standalone\Scripts\huggingface-cli.exe download ^
+@REM .\python_standalone\Scripts\hf.exe download ^
 @REM "tencent/Hunyuan3D-2" --include "hunyuan3d-vae-v2-0-turbo/*" --exclude "*.ckpt"
 
 
 @REM 下载 文生3D 所需模型
-rem .\python_standalone\Scripts\huggingface-cli.exe download "Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled"
+rem .\python_standalone\Scripts\hf.exe download "Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled"
 
 echo 脚本执行完毕，如有文件不完整，请重新运行脚本
 

@@ -38,8 +38,8 @@ if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
 )
 
 echo 正在下载 API 服务模式（带纹理）所需模型 ...
-.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**"
-.\python_standalone\Scripts\huggingface-cli.exe download "tencent/Hunyuan3D-2mini"
+.\python_standalone\Scripts\hf.exe download "tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**"
+.\python_standalone\Scripts\hf.exe download "tencent/Hunyuan3D-2mini"
 
 cd Hunyuan3D-2
 ..\python_standalone\python.exe -s api_server_dmc.py --host 0.0.0.0 --port 8081 --enable_tex
