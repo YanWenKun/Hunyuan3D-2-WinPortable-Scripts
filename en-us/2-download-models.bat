@@ -60,7 +60,7 @@ echo Downloading Hunyuan3D-2 models from HuggingFace...
 "tencent/Hunyuan3D-2" --include "hunyuan3d-delight-v2-0/**"
 
 .\python_standalone\Scripts\hf.exe download ^
-"tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**" --exclude "hunyuan3d-paint-v2-0-turbo/unet/diffusion_pytorch_model.bin"
+"tencent/Hunyuan3D-2" --include "hunyuan3d-paint-v2-0-turbo/**"
 
 @REM .\python_standalone\Scripts\hf.exe download ^
 @REM "tencent/Hunyuan3D-2" --include "hunyuan3d-dit-v2-0-turbo/*" --exclude "*.ckpt"
