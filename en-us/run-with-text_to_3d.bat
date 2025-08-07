@@ -28,7 +28,7 @@ echo Installing sentencepiece...
 if not exist ".\python_standalone\Scripts\.hf-reinstalled" (
     echo Reinstalling huggingface-hub...
     .\python_standalone\python.exe -s -m pip uninstall --yes huggingface-hub
-    .\python_standalone\python.exe -s -m pip install "huggingface-hub[hf-transfer]"
+    .\python_standalone\python.exe -s -m pip install "huggingface-hub[hf-transfer,cli,hf-xet]"
     if %errorlevel% equ 0 (
         echo.> ".\python_standalone\Scripts\.hf-reinstalled"
     )
