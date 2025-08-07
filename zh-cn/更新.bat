@@ -31,6 +31,7 @@ if errorlevel 1 (
 )
 
 echo 正在执行 git pull...
+git remote set-url origin https://gh-proxy.com/https://github.com/YanWenKun/Hunyuan3D-2.git
 git pull
 if errorlevel 1 (
     echo 错误： git pull 执行失败。
@@ -56,6 +57,7 @@ if errorlevel 1 (
 )
 
 echo 正在执行 git pull...
+git remote set-url origin https://gh-proxy.com/https://github.com/YanWenKun/Hunyuan3D-2-WinPortable-Scripts.git
 git pull
 if errorlevel 1 (
     echo 错误： git pull 执行失败。
