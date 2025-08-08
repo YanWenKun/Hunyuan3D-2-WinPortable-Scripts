@@ -25,7 +25,6 @@ for %%f in (
     "run-mv-high_vram.bat"
     "run-very_low_vram.bat"
     "run-with-text_to_3d.bat"
-    "run-hy3d-2.1-model.bat"
 ) do (
     if exist "%%~f" (
         echo Copying: "%%~f" to "%upper_dir%\"

@@ -26,7 +26,6 @@ for %%f in (
     "运行_大显存模式.bat"
     "运行_超低显存模式.bat"
     "运行_带文生3D.bat"
-    "运行_混元2.1模型.bat"
 ) do (
     if exist "%%~f" (
         echo 正在复制: "%%~f" 到 "%upper_dir%\"
